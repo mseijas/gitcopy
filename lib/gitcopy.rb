@@ -3,7 +3,7 @@ require "git"
 class GitCopy
 	@tempDir = './temp'
 
-	def self.cloneRepo(repoPath)
+	def self.copyRepo(repoPath)
 		ensureValidRepo(repoPath)
 		`git clone #{repoPath} #{@tempDir}`
 		`rm -rf #{@tempDir}/.git`

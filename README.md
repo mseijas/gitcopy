@@ -27,7 +27,7 @@ Use from the command line by running:
 Or from another ruby file by calling:
 
 ```ruby
-GitCopy::cloneRepo(GITHUB_REPO_URL)
+GitCopy::copyRepo(GITHUB_REPO_URL)
 ```
 
 ## Development

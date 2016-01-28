@@ -3,4 +3,4 @@
 require 'gitcopy'
 
 repoPath = ARGV[0]
-GitCopy::cloneRepo(repoPath)
+GitCopy::copyRepo(repoPath)
