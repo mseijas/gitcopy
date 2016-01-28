@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'gitcopy'
+
+repoPath = ARGV[0]
+GitCopy::cloneRepo(repoPath)
