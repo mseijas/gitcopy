@@ -22,14 +22,12 @@ Or install it yourself as:
 
 Use from the command line by running:
 
-```
-gitcopy [GITHUB_REPO_URL]
-```
+    $ gitcopy GITHUB_REPO_URL
 
-Or from another ruby file  by calling:
+Or from another ruby file by calling:
 
 ```ruby
-GitCopy::cloneRepo( [GITHUB_REPO_URL] )
+GitCopy::cloneRepo(GITHUB_REPO_URL)
 ```
 
 ## Development
