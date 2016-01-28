@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["matiseijas@gmail.com"]
 
   spec.summary       = %q{Download the contents of a github repo without cloning it.}
-  spec.description   = %q{Download the contents of a github repo.}
+  spec.description   = %q{Download the contents of a github repo without cloning it.}
   spec.homepage      = "https://github.com/mseijas/gitcopy"
   spec.license       = "MIT"
 
