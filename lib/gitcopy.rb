@@ -3,11 +3,16 @@ require "git"
 class GitCopy
 	@tempDir = './temp'
 
-	def self.copyRepo(repoPath)
+	def self.copyRepo(repoPath, destPath = ".")
+		if destPath == "" || destPath == nil
+			destPath = "."
+		end
+		
 		ensureValidRepo(repoPath)
 		`git clone #{repoPath} #{@tempDir}`
 		`rm -rf #{@tempDir}/.git`
-		`mv #{@tempDir}/* .`
+		`mkdir -p #{destPath}`
+		`mv #{@tempDir}/* #{destPath}`
 		`rm -rf #{@tempDir}`
 	end
 

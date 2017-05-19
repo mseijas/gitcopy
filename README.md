@@ -22,13 +22,15 @@ Or install it yourself as:
 
 Use from the command line by running:
 
-    $ gitcopy GITHUB_REPO_URL
+    $ gitcopy GITHUB_REPO_URL DESTINATION_PATH
 
 Or from another ruby file by calling:
 
 ```ruby
-GitCopy::copyRepo(GITHUB_REPO_URL)
+GitCopy::copyRepo(GITHUB_REPO_URL, DESTINATION_PATH)
 ```
+
+Note that if no `DESTINATION_PATH` is set, it will default to the current directory.
 
 ## Development
 
