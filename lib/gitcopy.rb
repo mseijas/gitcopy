@@ -13,6 +13,7 @@ class GitCopy
 		`rm -rf #{@tempDir}/.git`
 		`mkdir -p #{destPath}`
 		`mv #{@tempDir}/* #{destPath}`
+		`mv #{@tempDir}/.[!.]* #{destPath}`
 		`rm -rf #{@tempDir}`
 	end
 
