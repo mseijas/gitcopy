@@ -25,7 +25,7 @@ class GitCopy
 		repoProtocol = GitProperties.repoProtocol(repoPath)
 		repoExtension = GitProperties.repoExtension(repoPath)
 
-		if repoProtocol != "http" || repoProtocol != "git@" || repoExtension != ".git"
+		if (repoProtocol != "http" || repoProtocol != "git@") && repoExtension != ".git"
 			fatalError("Please provide a valid github repo")
 		end
 	end
